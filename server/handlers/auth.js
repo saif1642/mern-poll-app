@@ -56,6 +56,6 @@ exports.login = async (req, res, next) => {
       throw new Error();
     }
   } catch (err) {
-    return next({ status: 400, message: 'Invalid Username or Password' });
+    return next({ status: 400, message: 'Invalid Username/Password' });
   }
 };
