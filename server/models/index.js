@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 mongoose.set('debug',true);
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/polls');
+mongoose.connect(process.env.DATABASE);
 
 
 module.exports.User = require('./user');
